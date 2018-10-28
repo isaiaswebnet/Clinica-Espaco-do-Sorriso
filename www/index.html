@@ -15,29 +15,29 @@
          
          function onDeviceReady() {
              console.log("onDeviceReady");
-         console.log(navigator.notification);
+             console.log(navigator.notification);
          }
          
          function onOnline() {
              console.log("onOnline");
-         ref = cordova.InAppBrowser.open('//espacodosorriso.net.br', '_blank', 'location=no');
-         ref.addEventListener("exit", function(event) {navigator.notification.confirm('Você deseja sair do aplicativo?', onBackButton, 'Fique Conosco', ['NÃO','SIM']); }, false);
-         if(ref) {
-         document.getElementById("loader-wrapper").style.display = "none";
-         }
+             ref = cordova.InAppBrowser.open('http://espacodosorriso.net.br/', '_blank', 'location=no');
+             ref.addEventListener("exit", function(event) {navigator.notification.confirm('Você deseja sair do aplicativo?', onBackButton, 'Fique Conosco', ['NÃO','SIM']); }, false);
+             if(ref) {
+             	ocument.getElementById("loader-wrapper").style.display = "none";
+             }
          }
          
          function onOffline() {
              console.log("onOffline");
-         navigator.notification.alert('Sinto muito, parece haver um problema de rede.', onBackButton2, 'Sem Internet', 'SAIR');
+             navigator.notification.alert('Sinto muito, parece haver um problema de rede.', onBackButton2, 'Sem Internet', 'SAIR');
          }
          
          function onBackButton(e) {
              if(e==2){
              	navigator.app.exitApp();
-         }else{
-         onOnline();
-         }
+             }else{
+             	onOnline();
+             }
          }
          
          function onBackButton2() {
@@ -48,7 +48,7 @@
    <body onload="onLoad()">
       <div id="loader-wrapper">
          <span id="loader"></span>
-         <p>Carregando a Aplicativo</p>
+         <p>Carregando Aplicativo...</p>
       </div>
    </body>
 </html>
