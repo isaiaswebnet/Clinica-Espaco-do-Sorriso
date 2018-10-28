@@ -1,8 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="br.net.espacodosorriso.coes" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Clínica Espaço do Sorriso</name>
-    <description>Clínica Odontológica Espaço Do Sorriso</description>
-    <author email="isaiaswebnet@gmail.com" href="http://skynetsites.com.br">Isaias Oliveira</author>
+    <description>Clínica Odontológica Espaço Do Sorriso.</description>
+    <author email="isaiaswebnet@gmail.com" href="http://skynetsites.com.br">
+        Isaias Oliveira
+    </author>
     <content src="index.html" />
     <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-plugin-device-orientation" spec="~1.0.2" />
@@ -20,12 +22,13 @@
         <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
         <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
         <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
-        <splash density="port-ldpi" src="www/res/screen/android/drawable-port-ldpi-screen.png" />
-        <splash density="port-mdpi" src="www/res/screen/android/drawable-port-mdpi-screen.png" />
-        <splash density="port-hdpi" src="www/res/screen/android/drawable-port-hdpi-screen.png" />
-        <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
-        <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
-        <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
+
+	<splash density="port-hdpi" src="www/res/screen/android/splash-port-hdpi.png" />
+	<splash density="port-ldpi" src="www/res/screen/android/splash-port-ldpi.png" />
+	<splash density="port-mdpi" src="www/res/screen/android/splash-port-mdpi.png" />
+	<splash density="port-xhdpi" src="www/res/screen/android/splash-port-xhdpi.png" />
+	<splash density="port-xxhdpi" src="www/res/screen/android/splash-port-xxhdpi.png" />
+	<splash density="port-xxxhdpi" src="www/res/screen/android/splash-port-xxxhdpi.png" />
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -37,10 +40,13 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
-    <preference name="AppName" value="Clínica Espaço do Sorriso" />
+    <preference name="AppName" value="Moda em Fortaleza" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="Orientation" value="portrait" />
-	<preference name="Fullscreen" value="true" />
+    <preference name="target-device" value="iphone" />
+	<preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="10000" />
+	<preference name="SplashMaintainAspectRatio" value="true" />
 </widget>
