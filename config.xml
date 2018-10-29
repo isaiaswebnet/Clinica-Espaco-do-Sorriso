@@ -5,6 +5,7 @@
     <author email="isaiaswebnet@gmail.com" href="http://skynetsites.com.br">Isaias Oliveira</author>
     <content src="index.html" />
     <engine name="android" spec="~7.0.0" />
+    <splash src="www/res/screen/android/drawable-port-mdpi-screen.png" platform="android" width="320" height="480" />
     <plugin name="cordova-plugin-device-orientation" spec="~1.0.2" />
     <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
@@ -21,12 +22,12 @@
         <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
         <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
 
-        <splash density="port-hdpi" src="www/res/screen/android/splash-port-hdpi.png" />
-        <splash density="port-ldpi" src="www/res/screen/android/splash-port-ldpi.png" />
-        <splash density="port-mdpi" src="www/res/screen/android/splash-port-mdpi.png" />
-        <splash density="port-xhdpi" src="www/res/screen/android/splash-port-xhdpi.png" />
-        <splash density="port-xxhdpi" src="www/res/screen/android/splash-port-xxhdpi.png" />
-        <splash density="port-xxxhdpi" src="www/res/screen/android/splash-port-xxxhdpi.png" />
+        <splash density="port-hdpi" src="www/res/screen/android/drawable-port-hdpi-screen.png" />
+        <splash density="port-ldpi" src="www/res/screen/android/drawable-port-ldpi-screen.png" />
+        <splash density="port-mdpi" src="www/res/screen/android/drawable-port-mdpi-screen.png" />
+        <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
+        <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
+        <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
