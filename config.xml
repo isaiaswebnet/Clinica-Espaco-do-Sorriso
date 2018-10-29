@@ -5,6 +5,7 @@
     <author email="isaiaswebnet@gmail.com" href="http://skynetsites.com.br">Isaias Oliveira</author>
     <content src="index.html" />
     <engine name="android" spec="~7.0.0" />
+    <plugin name="com.plugins.shortcut" spec="0.1.1" source="pgb" />
     <plugin name="cordova-plugin-device-orientation" spec="~1.0.2" />
     <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
